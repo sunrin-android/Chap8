@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="선린인터넷고등학교"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView android:text="학과 : " />
+
+            <EditText android:id="@+id/depart" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="학번 : " />
+
+            <EditText android:id="@+id/num" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="이름 : " />
+
+            <EditText android:id="@+id/name" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="연락처 : " />
+
+            <EditText android:id="@+id/phone" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="레코드 추가" />
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="레코드 조회" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
